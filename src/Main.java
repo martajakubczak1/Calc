@@ -1,11 +1,15 @@
 import java.util.Scanner;
 
 public class Main {
-    public static void main(String[] args){
-        Calculator kalkulator1= new Calculator();
-        System.out.println(kalkulator1.addition(4,6));
-        System.out.println(kalkulator1.subtracion(8,4));
-        System.out.println(kalkulator1.multiplication(5,6));
-        System.out.println(kalkulator1.division(30,5));
+    public static void main(String[] args) {
+        Calculator kalkulator1 = new Calculator();
+        Scanner scanner= new Scanner(System.in);
+        System.out.println("Enter first value");
+        int value1 = scanner.nextInt();
+        System.out.println("Enter second value");
+        int value2 = scanner.nextInt();
+        System.out.println(kalkulator1.addition(value1, value2));
+
     }
+
 }
